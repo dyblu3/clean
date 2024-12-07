@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Cleaner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Cleaner</h1>
+        <label for="inputText">Input Text:</label>
+        <textarea id="inputText" rows="5" placeholder="Enter your text here..."></textarea>
+
+        <div class="btn-group">
+            <button id="cleanTextBtn" onclick="cleanText()">Clean Text</button>
+            <button id="copyToClipboardBtn" onclick="copyToClipboard()">Copy</button>
+            <button id="clearTextBtn" onclick="clearText()">Clear</button>
+        </div>
+
+        <div class="notification" id="copyNotification">Text copied to clipboard!</div>
+
+        <label for="cleanedText">Cleaned Text:</label>
+        <textarea id="cleanedText" rows="5" readonly placeholder="Cleaned text will appear here..."></textarea>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
